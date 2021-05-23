@@ -17,7 +17,7 @@ ul {
 }
 a {
     text-decoration: none;
-
+    cursor: pointer;
 }
 h2, h3,h4 {
     color: var(--head-color);
@@ -198,12 +198,16 @@ span {
 }
 
 .location .row form  button {
-    padding: 5px 25px;
+    padding: 5px 30px;
     transition: all 0.3s;
     margin-right: auto;
 }
+.location .row form  button i {
+    display: none;
+    transition: all .4s ease;
+}
 .location .row form  button:hover i {
-    transform: scale(1.2);
+    display: inline-block;
 }
 /* Start footer */
 footer {
@@ -257,6 +261,7 @@ footer .container .social-media i {
     justify-content: center;
     cursor: pointer;
     transition: 0.3s;
+
 }
 footer .container .social-media a:hover i {
     transform: scale(1.3) rotate(360deg);
