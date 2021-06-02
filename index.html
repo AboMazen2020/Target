@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تارجت - لتأجير السيارات</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/shourt-icon.png"/>
     <!-- Font cairo -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <!-- Font cairo -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- Aos Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Aos Animation -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/master.css">
 </head>
@@ -50,7 +53,7 @@
                     <a class="nav-link" href="our-branches.html" title="فروعنا"> فروعنا </a>
                     </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#" title="آخر الأخبار"> آخر الأخبار  </a>
+                <a class="nav-link" href="latest-news.html" title="آخر الأخبار"> آخر الأخبار  </a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="contact-us.html"> تواصل معنا</a>
@@ -101,7 +104,7 @@
                     <h2>أسطول سياراتنا</h2>
                     <p>تمتلك تارجت لتأجير السيارات أسطول متنوع من السيارات والموديلات الأقتصادية المختلفة </p>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="flip-left">
                     <div class="col-lg-6 col-md-12">
                         <div class="box">
                             <img src="image/cars/هيونداي-أكسنت-2020.jpg " alt="">
@@ -110,8 +113,12 @@
                                 <span>2020</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>160.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                    
+                                </div>
+                                <div class="price">
+                                    <p>90 ريال  <span>يومي</span> </p>
+                                    <p>2,550 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                <a href="contact-us.html">احجز الآن</a>                                
                             </div>
@@ -127,8 +134,12 @@
                                 <span>2019</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>150.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                 
+                                </div>
+                                <div class="price">
+                                    <p>80 ريال  <span>يومي</span> </p>
+                                    <p>2,250 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                                 
                             </div>
@@ -144,8 +155,12 @@
                                 <span>2021</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>160.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                 
+                                </div>
+                                <div class="price">
+                                    <p>100 ريال  <span>يومي</span> </p>
+                                    <p>2,700 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                               
                             </div>
@@ -161,8 +176,12 @@
                                 <span>2019</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>148.80 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                   
+                                </div>
+                                <div class="price">
+                                    <p>75 ريال  <span>يومي</span> </p>
+                                    <p>2,100 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                                
                             </div>
@@ -178,8 +197,12 @@
                                 <span>2020</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>160.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                 
+                                </div>
+                                <div class="price">
+                                    <p>80 ريال  <span>يومي</span> </p>
+                                    <p>2,250 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                                 
                             </div>
@@ -195,8 +218,12 @@
                                 <span>2019</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>150.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                 
+                                </div>
+                                <div class="price">
+                                    <p>65 ريال  <span>يومي</span> </p>
+                                    <p>1,650 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                                 
                             </div>
@@ -212,8 +239,12 @@
                                 <span>2018</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>140.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                  
+                                </div>
+                                <div class="price">
+                                    <p>60 ريال  <span>يومي</span> </p>
+                                    <p>1,500 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                                  
                             </div>
@@ -229,8 +260,12 @@
                                 <span>2020</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>160.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                  
+                                </div>
+                                <div class="price">
+                                    <p>90 ريال  <span>يومي</span> </p>
+                                    <p>2,250 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                                  
                             </div>
@@ -246,8 +281,12 @@
                                 <span>2019</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>160.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                  
+                                </div>
+                                <div class="price">
+                                    <p>90 ريال  <span>يومي</span> </p>
+                                    <p>2,250 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                                 
                             </div>
@@ -263,8 +302,12 @@
                                 <span>2020</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>160.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                   
+                                </div>
+                                <div class="price">
+                                    <p>85 ريال  <span>يومي</span> </p>
+                                    <p>2,250 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                                 
                             </div>
@@ -281,16 +324,18 @@
                                 <span>2020</span>
                                 <div class="content"> 
                                     <p>5 مقاعد | 4 أبواب | 2 الأمتعة</p>
-                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>
-                                    <p>110.00 ريال</p>                                    
+                                    <p>مكيف | ناقل حركة أوتوماتيكي</p>                                  
+                                </div>
+                                <div class="price">
+                                    <p>70 ريال  <span>يومي</span> </p>
+                                    <p>1,650 ريال  <span>شهري</span></p>
+                                    <p>"الأسعار غير شاملة الضريبة"</p>
                                 </div>
                                 <a href="contact-us.html">احجز الآن</a>                                  
                             </div>
 
                         </div>
                     </div>
-
-
                         </div>
                     </div>
 
@@ -301,7 +346,7 @@
 
              <!-- Start stats -->
      <div class="stats">
-        <div class="container">
+        <div class="container"data-aos="zoom-in-down">
             <div class="box">
                 <i class="fas fa-car"></i>
                <div class="number">
@@ -344,24 +389,6 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="links">
                                 <img src="image/logo - Copy.png" alt="">
-
-                                <!-- <ul>
-                                    <li>
-                                        <a href="#"><i class="fas fa-angle-double-left"></i> الرئيسية</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fas fa-angle-double-left"></i>  من نحن</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fas fa-angle-double-left"></i>  أسطوالنا</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fas fa-angle-double-left"></i>  فروعنا</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fas fa-angle-double-left"></i>  آخر الأخبار</a>
-                                    </li>
-                                </ul> -->
                             </div>
                         </div>
 
@@ -378,7 +405,7 @@
                                         <p>الرمز البريدي - 22361</p>
                                     </li>
                                     <li>
-                                        <p> رقم التواصل: 966544323868</p>
+                                        <p> رقم التواصل: 0552031633</p>
                                     </li>
                                     <li>
                                         <p> الإيميل: info@arabtop-sa.com</p>
@@ -415,28 +442,17 @@
         </footer>
         <!-- End footer -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 <!-- jQuery and JS bundle w/ Popper.js -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.rtlcss.com/bootstrap/v4.3.1/js/bootstrap.min.js" integrity="sha384-2NsOVs5JcOR/wf4f2u5VYxUT+23fCbG29ajnpPYiyCZWF0dT4Ik3Qewqmf+pwm/d" crossorigin="anonymous"></script>
+<!-- Aos Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+<!-- Aos Animation -->
 <script src="js/master.js"></script>
 </body>
 </html>
