@@ -10,6 +10,7 @@ body {
     font-family: 'Cairo', sans-serif;
     position: relative;
 }
+
 /* Gloubl css */
 ul {
     list-style: none;
@@ -49,23 +50,33 @@ span {
     left: 50%;
     transform: translateX(-50%);
     bottom: -30px;
-    width: 180px;
     margin: 20px auto;
     height: 3px;
     background-color: var(--main-color);
     border-radius: 10px;
+    animation: animate 3s linear infinite;
 }
+@keyframes animate {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 160px;
+    }
+}
+
 .heading h2::after {
     content: "";
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotate(47deg);
     bottom: -37px;
     width: 15px;
-    height: 20px;
-    border-radius: 50px;
+    height: 15px;
     margin: 20px auto;
     background-color: var(--head-color);
+    border-radius: 1px;
+    border: 2px solid var(--main-color);
 }
 .heading p {
     color: #777;
@@ -98,6 +109,7 @@ span {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .navbar .container .navbar-brand img {
     width: 300px;
@@ -177,19 +189,50 @@ span {
 .our-branches .container .row .box .content p{
     color: #777;
 }
-.our-branches .container .row .box .content p:nth-child(3) {
-    padding-bottom: 10px;
-    color: brown;
-    font-size: 18px;
-    font-weight: bold;
+.our-branches .container .row .box .info .price {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #eee;
+
 }
+.our-branches .container .row .box .info .price p {
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #FFCD00;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: #ffcc0046;
+}
+.our-branches .container .row .box .info .price p:nth-child(3) {
+    padding: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent;
+    border: transparent;
+    color: #777;
+    text-decoration: underline;
+
+}
+.our-branches .container .row .box .info .price p span {
+    color: brown;
+
+}
+
 .our-branches .container .row .box a {
     text-decoration: none;
-    background-color: var(--main-color);
-    color: var(--head-color);
-    padding: 5px 20px;
+    background-color: rgb(0, 138, 0);
+    color: white;
+    padding: 3px 7px;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.our-branches .container .row .box a:hover {
+    background-color: var(--main-color);
+    color: black;
+
 }
 /* End our-branches */
 
@@ -315,7 +358,7 @@ footer .container .social-media i {
     transition: 0.3s;
 }
 footer .container .social-media a:hover i {
-    transform: scale(1.3) rotate(360deg);
+    transform: scale(1.3);
     background-color: var(--head-color);
     border: 2px solid var(--main-color);
 

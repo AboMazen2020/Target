@@ -32,7 +32,7 @@ span {
     --back-color:#e5ebfd;
 }
 .heading {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
 }
@@ -49,23 +49,33 @@ span {
     left: 50%;
     transform: translateX(-50%);
     bottom: -30px;
-    width: 180px;
     margin: 20px auto;
     height: 3px;
     background-color: var(--main-color);
     border-radius: 10px;
+    animation: animate 3s linear infinite;
 }
+@keyframes animate {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 160px;
+    }
+}
+
 .heading h2::after {
     content: "";
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotate(47deg);
     bottom: -37px;
     width: 15px;
-    height: 20px;
-    border-radius: 50px;
+    height: 15px;
     margin: 20px auto;
     background-color: var(--head-color);
+    border-radius: 1px;
+    border: 2px solid var(--main-color);
 }
 .heading p {
     color: #777;
@@ -96,6 +106,7 @@ span {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .navbar .container .navbar-brand img {
     width: 300px;
@@ -191,7 +202,7 @@ span {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .location .row form {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .location .row form input, textarea, button {
     margin-bottom: 10px;
@@ -264,7 +275,7 @@ footer .container .social-media i {
 
 }
 footer .container .social-media a:hover i {
-    transform: scale(1.3) rotate(360deg);
+    transform: scale(1.3) rotate(0deg);
     background-color: var(--head-color);
     border: 2px solid var(--main-color);
 
