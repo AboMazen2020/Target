@@ -10,6 +10,22 @@ body {
     font-family: 'Cairo', sans-serif;
     background-color: var(--back-color);
 }
+/* change scroall bar */
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--head-color);
+    outline: 1px solid slategrey;
+    border-radius: 20px;
+    outline: none;
+}
+/* body::-webkit-scrollbar-thumb:hover {
+    
+} */
+/* End scroall bar */
 /* Gloubl css */
 ul {
     list-style: none;
@@ -41,7 +57,7 @@ span {
     --padding-bottom:50px;
 }
 .heading {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 }
@@ -159,7 +175,7 @@ span {
 
 /* Start about-us */
 .about {
-    padding: 50px 20px;
+    padding: 30px 20px;
     
 }
 .about .container {
@@ -180,8 +196,22 @@ span {
 .about .container .vision .row h3 {
     font-weight: bold;
 }
+.about .container .vision img {
+    height: 150px;
+    margin-bottom: 20px;
+
+}
+.about .container .vision p {
+    padding: 0 20px;
+    font-weight: bold;
+}
 .about .container .our-mission {
     padding: 50px 20px;
+}
+.about .container .our-mission img {
+    height: 150px;
+    margin-bottom: 20px;
+
 }
 .about .container .goals {
     padding: 50px 0;
@@ -299,15 +329,17 @@ footer hr {
     cursor: pointer;
     padding: 10px;
     border-radius: 4px;
-  }
-  #myBtn i {
-      color: var(--head-color);
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
+}
+#myBtn i {
+    color: var(--head-color);
+}
 
+#myBtn:hover {
+background-color: #555;
+}
+#myBtn:hover i {
+    color: white;
+}
 /* End top */
 footer .copyrigth p {
     position: relative;

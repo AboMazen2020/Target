@@ -10,6 +10,22 @@ body {
     font-family: 'Cairo', sans-serif;
     background-color: #E5EBFD;
 }
+/* change scroall bar */
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--head-color);
+    outline: 1px solid slategrey;
+    border-radius: 20px;
+    outline: none;
+}
+/* body::-webkit-scrollbar-thumb:hover {
+    
+} */
+/* End scroall bar */
 /* Gloubl css */
 ul {
     list-style: none;
@@ -32,8 +48,8 @@ span {
     --back-color:#e5ebfd;
 }
 .heading {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 .heading h2 {
@@ -150,21 +166,28 @@ span {
 
 /* Start latest-news */
 .latest-news {
-    padding: 100px 20px;
+    padding: 100px 0px;
 
+}
+.latest-news .heading img {
+    width: 100px;
+    height: 100px;
 }
 .latest-news .card-news {
     background-color: white;
     border-radius: 10px;
     text-align: right;
     padding: 10px;
+    border: 2px dotted var(--head-color);
 }
 
 .latest-news .card-news img {
     width: 100%;
     border-radius: 7px;
     margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
+
 .latest-news .card-news .info-news span {
     display: block;
     text-align: left;
@@ -258,15 +281,17 @@ footer hr {
     cursor: pointer;
     padding: 10px;
     border-radius: 4px;
-  }
-  #myBtn i {
-      color: var(--head-color);
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
+}
+#myBtn i {
+    color: var(--head-color);
+}
 
+#myBtn:hover {
+background-color: #555;
+}
+#myBtn:hover i {
+    color: white;
+}
 /* End top */
 footer .copyrigth p {
     position: relative;
