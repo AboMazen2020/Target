@@ -22,7 +22,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: var(--head-color);
     outline: 1px solid slategrey;
-    border-radius: 20px;
     outline: none;
 }
 /* body::-webkit-scrollbar-thumb:hover {
@@ -151,6 +150,7 @@ span {
     border-bottom: 3px solid var(--main-color);
     font-weight: bold;
 }
+
 .navbar .navbar-nav  .nav-item .nav-link.active {
     color: var(--main-color);
 }
@@ -158,7 +158,57 @@ span {
     background-color: var(--head-color) !important; 
     color: white;
 }
+/* End Navbar */
 
+/* Start news-bar */
+.news-bar {
+    background-color: rgba(0, 206, 209, 0.185);
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.news-bar::after {
+    position: absolute;
+    content: "آخر الأخبار";
+    top: 0;
+    right: 0px;
+    width: 150px;
+    height: 100%;
+    background-color: var(--head-color);
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    line-height: 1.9;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.news-bar .animation-news {
+    color: var(--head-color);
+    font-weight: bold;
+    line-height: 1.9;  
+    display: inline-block;
+    cursor: default;
+    animation: animation-bar 20s linear infinite;
+    -moz-animation: animation-bar 20s linear infinite;
+    -webkit-animation: animation-bar 20s linear infinite;
+    -o-animation: animation-bar 20s linear infinite;
+}
+.news-bar:hover .animation-news {
+    animation-play-state: paused;
+}
+@keyframes animation-bar {
+    from {
+        transform: translateX(-450px);
+    }
+    to {
+        transform: translateX(1400px);
+    }
+}
+.news-bar .animation-news img {
+    width: 20px;
+}
+    
+/* End news-bar */
 /* Start Slider */
 @media (max-width: 575.98px) { 
     .carousel .carousel-inner img {

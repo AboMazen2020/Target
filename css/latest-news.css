@@ -9,6 +9,7 @@ html {
 body {
     font-family: 'Cairo', sans-serif;
     background-color: #E5EBFD;
+    position: relative;
 }
 /* change scroall bar */
 
@@ -48,8 +49,8 @@ span {
     --back-color:#e5ebfd;
 }
 .heading {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
 }
 .heading h2 {
@@ -67,6 +68,7 @@ span {
     bottom: -30px;
     margin: 20px auto;
     height: 3px;
+    width: 150px;
     background-color: var(--main-color);
     border-radius: 10px;
     animation: animate 3s linear infinite;
@@ -166,7 +168,7 @@ span {
 
 /* Start latest-news */
 .latest-news {
-    padding: 100px 0px;
+    padding: 100px 25px;
 
 }
 .latest-news .heading img {
@@ -183,7 +185,7 @@ span {
 
 .latest-news .card-news img {
     width: 100%;
-    border-radius: 7px;
+    border-radius: 5px;
     margin-bottom: 20px;
     transition: all 0.3s ease;
 }
@@ -195,6 +197,7 @@ span {
     font-weight: bold;
 }
 .latest-news .card-news p {
+    text-align: center;
     color: #999;
     font-size: 18px;
     margin-top: 20px;
