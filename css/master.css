@@ -71,7 +71,7 @@ span {
     height: 3px;
     background-color: var(--main-color);
     border-radius: 10px;
-    animation: animate 3s linear infinite;
+    animation: animate 5s linear infinite;
 }
 @keyframes animate {
     from {
@@ -184,10 +184,11 @@ span {
 
 .news-bar .animation-news {
     color: var(--head-color);
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.9;  
     display: inline-block;
     cursor: default;
+    margin-right: 50px;
     animation: animation-bar 20s linear infinite;
     -moz-animation: animation-bar 20s linear infinite;
     -webkit-animation: animation-bar 20s linear infinite;
@@ -198,7 +199,7 @@ span {
 }
 @keyframes animation-bar {
     from {
-        transform: translateX(-450px);
+        transform: translateX(-900px);
     }
     to {
         transform: translateX(1400px);
@@ -351,7 +352,7 @@ span {
     }
 }
 
-.stats .container .box i {
+.stats .container .box .fas {
     background-color: white;
     width: 70px;
     height: 70px;
@@ -361,6 +362,10 @@ span {
     border-radius: 50%;
     font-size: 40px;
     margin: 20px auto;
+    transition: 0.3s ease;
+}
+.stats .container .box .fas:hover {
+    transform: scale(1.5);
 }
 .stats .container .box .number{
     font-size: 60px;

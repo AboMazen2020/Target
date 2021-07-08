@@ -34,9 +34,10 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-h2, h3,h4 {
+h2, h3,h4,h5 {
     color: var(--head-color);
     font-weight: 600;
+    text-align: center;
 }
 span {
     color: var(--main-color);
@@ -68,7 +69,7 @@ span {
     height: 3px;
     background-color: var(--main-color);
     border-radius: 10px;
-    animation: animate 3s linear infinite;
+    animation: animate 5s linear infinite;
 }
 @keyframes animate {
     from {
@@ -163,7 +164,8 @@ span {
 
 /* Start contact */
 .contact-card {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 .contact-card .card  {
     text-align: center;
@@ -214,24 +216,89 @@ span {
     font-size: 20px;
 }
 /* End contact */
+
+/* Strat time-work */
+.time-work {
+    margin: 20px;
+}
+.time-work .container {
+    background-color: white;
+    padding: 30px;
+}
+.time-work .container .content h5 {
+    color: white;
+    background-color: var(--head-color);
+    padding: 7px;
+}
+.time-work .container .content p {
+    text-align: center;
+}
+/* End time-work */
+
+/* Strat Location */
 .location {
     margin-top: 30px;
 }
 .location iframe {
     margin-bottom: 30px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 100%;
+}
+.location h3 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.location h3::before {
+    content: "";
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: var(--main-color);
 }
 .location .row form {
+    text-align: right;
     padding: 0 5px;
+    position: relative;
 }
-.location .row form input, textarea, button {
-    margin-bottom: 10px;
+.location .row form .input-group input,
+.location .row form .input-group textarea,
+.location .row form .input-group button {
+    margin-bottom: 30px;
+    padding: 10px;
+    transition: 0.3s;
 }
-
+.location .row form .input-group {
+    position: relative;
+}
+.location .row form label {
+    text-align: right;
+    position: absolute;
+    padding: 5px;
+    font-size: 15px;
+}
+.location .row form .input-group input:focus~label,
+.location .row form .input-group textarea:focus~label,
+.location .row form .input-group input:valid~label,
+.location .row form .input-group textarea:valid~label{
+    
+    top: -32px;
+    color: var(--head-color);
+    font-weight: bold;
+}
+.location .row form label .fas {
+    color: var(--head-color);
+}
 .location .row form  button {
     padding: 5px 30px;
     transition: all 0.3s;
     margin-right: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
 }
 .location .row form  button i {
     display: none;
@@ -240,6 +307,7 @@ span {
 .location .row form  button:hover i {
     display: inline-block;
 }
+/* End Location */
 /* Start footer */
 footer {
     padding-top: 100px;

@@ -11,21 +11,7 @@ body {
     background-color: #E5EBFD;
     position: relative;
 }
-/* change scroall bar */
 
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--head-color);
-    outline: 1px solid slategrey;
-    border-radius: 20px;
-    outline: none;
-}
-/* body::-webkit-scrollbar-thumb:hover {
-    
-} */
 /* End scroall bar */
 /* Gloubl css */
 ul {
@@ -71,7 +57,8 @@ span {
     width: 150px;
     background-color: var(--main-color);
     border-radius: 10px;
-    animation: animate 3s linear infinite;
+    animation: animate 5s linear infinite;
+
 }
 @keyframes animate {
     from {
@@ -181,15 +168,24 @@ span {
     text-align: right;
     padding: 10px;
     border: 2px dotted var(--head-color);
+
 }
 
 .latest-news .card-news img {
     width: 100%;
+    height: 100%;
     border-radius: 5px;
     margin-bottom: 20px;
     transition: all 0.3s ease;
-}
 
+}
+.latest-news .card-news .image{
+    overflow: hidden;
+}
+.latest-news .card-news .image:hover img {
+
+    transform: scale(1.4) rotate(5deg);
+}
 .latest-news .card-news .info-news span {
     display: block;
     text-align: left;

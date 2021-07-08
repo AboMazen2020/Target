@@ -68,7 +68,7 @@ span {
     height: 3px;
     background-color: var(--main-color);
     border-radius: 10px;
-    animation: animate 3s linear infinite;
+    animation: animate 5s linear infinite;
 }
 @keyframes animate {
     from {
